@@ -21,10 +21,10 @@ console.log("Борітеся - поборете!");
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 
 const galleryRef = document.querySelector('.gallery');
-console.log(galleryRef);
+// console.log(galleryRef);
 
 const listImage = galleryItems.map(item => `<div class="gallery__item">
   <a class="gallery__item" href=${item.original}>
@@ -41,6 +41,6 @@ galleryRef.insertAdjacentHTML("beforeend", listImage);
 // console.log(galleryRef);
 galleryRef.addEventListener('click', (event) => {
     event.preventDefault();
-    console.log('Клік');
+    // console.log('Клік');
 });
 let lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250});
